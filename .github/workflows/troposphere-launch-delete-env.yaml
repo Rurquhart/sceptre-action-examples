@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: 'Sceptre Validate'
-        uses: rurquhart/sceptre-action@master
+        uses: Rurquhart/sceptre-action@master
         with:
           sceptre_version: '2.3.0'
           sceptre_subcommand: 'validate prod'
@@ -24,7 +24,7 @@ jobs:
           sceptre_directory: './src/troposphere'
 
       - name: 'Sceptre launch'
-        uses: rurquhart/sceptre-action@master
+        uses: Rurquhart/sceptre-action@master
         with:
           sceptre_version: '2.3.0'
           sceptre_subcommand: 'launch -y prod'
@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: 'Sceptre launch'
-        uses: rurquhart/sceptre-action@master
+        uses: Rurquhart/sceptre-action@master
         with:
           sceptre_version: '2.3.0'
           sceptre_subcommand: 'delete -y prod'

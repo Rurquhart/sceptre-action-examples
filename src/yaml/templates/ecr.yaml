@@ -6,7 +6,7 @@ Resources:
   ExampleECR:
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName: example-ecr-yaml
+      RepositoryName: example-ecr-yaml-test
       Tags:
         - Key: Application
           Value: sceptre-action-example

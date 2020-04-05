@@ -1,4 +1,0 @@
----
-template_path: ecr.py
-sceptre_user_data:
-  RepoName: SceptreActionRepo

@@ -1,0 +1,11 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: "An example ECR"
+Resources:
+  ExampleECR:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: example-ecr
+      Tags:
+        - Key: Application
+          Value: sceptre-action-example

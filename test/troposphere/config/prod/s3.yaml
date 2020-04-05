@@ -1,0 +1,4 @@
+---
+template_path: s3.py
+sceptre_user_data:
+  BucketName: SceptreActionBucket

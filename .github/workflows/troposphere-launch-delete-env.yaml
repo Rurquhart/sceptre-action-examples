@@ -29,6 +29,7 @@ jobs:
           sceptre_troposphere: 'true'
           sceptre_troposphere_version: '2.6.0'
           sceptre_directory: './src/troposphere'
+
   delete:
     name: 'Sceptre delete full environment'
     runs-on: ubuntu-latest

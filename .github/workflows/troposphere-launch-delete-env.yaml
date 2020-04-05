@@ -8,7 +8,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 jobs:
   launch:
-    name: 'Sceptre launch full environment'
+    name: 'Sceptre launch full environment troposphere'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'

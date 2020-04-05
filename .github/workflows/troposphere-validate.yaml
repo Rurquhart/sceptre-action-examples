@@ -1,4 +1,4 @@
-name: 'Sceptre GitHub Actions'
+name: 'Sceptre validate troposphere'
 on:
   pull_request:
 env:
@@ -6,7 +6,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 jobs:
   sceptre:
-    name: 'Sceptre'
+    name: 'Sceptre validate troposphere'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -16,7 +16,7 @@ jobs:
         uses: Rurquhart/sceptre-action@master
         with:
           sceptre_version: '2.3.0'
+          sceptre_troposphere_version: '2.6.0'
           sceptre_directory: "./src/troposphere"
           sceptre_subcommand: 'validate prod'
           sceptre_troposphere: 'true'
-          sceptre_troposphere_version: '2.6.0'

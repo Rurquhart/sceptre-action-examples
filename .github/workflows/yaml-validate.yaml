@@ -1,4 +1,4 @@
-name: 'Sceptre GitHub Actions'
+name: 'Sceptre validate yaml'
 on:
   - pull_request
 env:
@@ -6,7 +6,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 jobs:
   sceptre:
-    name: 'Sceptre'
+    name: 'Sceptre validate yaml'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'

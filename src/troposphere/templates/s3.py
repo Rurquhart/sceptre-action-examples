@@ -1,7 +1,7 @@
 from troposphere import Template
 from troposphere.s3 import Bucket
 
-
+# Creates a S3 bucket
 class SceptreResource:
     def __init__(self, sceptre_user_data):
         self.template = Template()

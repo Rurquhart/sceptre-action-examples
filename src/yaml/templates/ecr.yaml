@@ -1,11 +1,12 @@
 ---
+# Creates an ECR repo
 AWSTemplateFormatVersion: 2010-09-09
 Description: "An example ECR"
 Resources:
   ExampleECR:
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName: example-ecr
+      RepositoryName: example-ecr-yaml
       Tags:
         - Key: Application
           Value: sceptre-action-example

@@ -1,7 +1,7 @@
 from troposphere import Template
 from troposphere.ecr import Repository
 
-
+# Creates a ECR Repo
 class SceptreResource:
     def __init__(self, sceptre_user_data):
         self.template = Template()
